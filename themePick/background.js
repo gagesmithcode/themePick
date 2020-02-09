@@ -15,7 +15,7 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
       chrome.declarativeContent.onPageChanged.addRules([{
         conditions: [new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: {hostEquals: 'developer.chrome.com'},
+          // pageUrl: {hostEquals: 'developer.chrome.com'}, //This portion says what hosts should be effected by the extension. Need to get to work for all hosts
         })
       ],
             actions: [new chrome.declarativeContent.ShowPageAction()]
