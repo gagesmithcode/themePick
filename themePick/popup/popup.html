@@ -1,123 +1,55 @@
-<!--
- * Project       : ThemePick Extension
- * FileName      : popup.html
- * Author        : Gage Smith
- * Description   :
- *
--->
-<!<!DOCTYPE html>
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body {
-        height: 600px;
-        width: 384px;
-        padding: 0;
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
-      }
-      button {
-        height: 50px;
-        width: 50px;
-        outline: none;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ThemePick Extension</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      type="text/css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="popup.css" />
   </head>
-  <body >
-      <button id="changeColor"></button>
-      <script src="popup.js"></script>
-      <fieldset>
-        <dl>
-          <dt><label for="cookies">Cookies: </label></dt>
-          <dd>
-            <select id="cookies" disabled>
-              <option value="allow">Allow</option>
-              <option value="session_only">Session only</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="images">Images: </label></dt>
-          <dd>
-            <select id="images" disabled>
-              <option value="allow">Allow</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-  
-          <dt><label for="javascript">Javascript: </label></dt>
-          <dd>
-            <select id="javascript" disabled>
-              <option value="allow">Allow</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="location">Location: </label></dt>
-          <dd>
-            <select id="location" disabled>
-              <option value="allow">Allow</option>
-              <option value="ask">Ask</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="plugins">Plugins: </label></dt>
-          <dd>
-            <select id="plugins" disabled>
-              <option value="allow">Allow</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="popups">Pop-ups: </label></dt>
-          <dd>
-            <select id="popups" disabled>
-              <option value="allow">Allow</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="notifications">Notifications: </label></dt>
-          <dd>
-            <select id="notifications" disabled>
-              <option value="allow">Allow</option>
-              <option value="ask">Ask</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="microphone">Microphone: </label></dt>
-          <dd>
-            <select id="microphone" disabled>
-              <option value="allow">Allow</option>
-              <option value="ask">Ask</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="camera">Camera: </label></dt>
-          <dd>
-            <select id="camera" disabled>
-              <option value="allow">Allow</option>
-              <option value="ask">Ask</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt>
-            <label for="unsandboxedPlugins">Unsandboxed plugin access: </label>
-          </dt>
-          <dd>
-            <select id="unsandboxedPlugins" disabled>
-              <option value="allow">Allow</option>
-              <option value="ask">Ask</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-          <dt><label for="automaticDownloads">Automatic Downloads: </label></dt>
-          <dd>
-            <select id="automaticDownloads" disabled>
-              <option value="allow">Allow</option>
-              <option value="ask">Ask</option>
-              <option value="block">Block</option>
-            </select>
-          </dd>
-        </dl>
-      </fieldset>
-
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <!-- this src portion was given by referencing the location the extension is refering the image to. 
+          In console of extension run chrome.runtime.getURL("path"); -->
+        <img
+          src="chrome-extension://hjeobjelmlmcdbgkfcocaommjaljcfif/images/CSUCHICO-Seal-Color.png"
+          class="logo-icon"
+        />
+        Welcome to ThemePick!
+        <span class="version">(1.0.0)</span>
+      </h1>
+    </div>
+    <div class="modal-content">
+      <p>Links to ThemePick stuff:</p>
+    </div>
+    <div class="modal-icons">
+      <div class="flex-container">
+        <div class="flex">
+          <a href="https://github.com/gagesmithcode" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-icons">
+      <div class="flex-container">
+        <div class="flex">
+          <button id="changeColor">Color Click</button>
+          <script src="popup.js"></script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
