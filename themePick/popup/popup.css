@@ -5,6 +5,7 @@ html, body {
   min-height: 180px;
   padding: 0;
   width: 384px;
+  background-color: #414040;
 }
 .button {
   text-align: center;
@@ -29,7 +30,7 @@ img {
 }
 
 .modal-header {
-  align-items: center;
+  align-items: right;
   border-bottom: 0.5px solid #dadada;
 }
 
@@ -77,5 +78,6 @@ img {
 
 .flex .fa {
     font-size: 40px;
-    color: #212121
+    color: #FFFFFF;
+    display: inline-block;
 }
