@@ -6,7 +6,7 @@
   "options_page": "options/options.html",
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
+      "matches": ["*://*/*", "<all_urls>"],
       "js": ["content-scripts/content.js"]
     }
   ],
