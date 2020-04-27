@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(45, 45, 46) !important;
+    color:#fff !important;
+}
+
+/* text on the webpage */
+#hptl a {
+    color: #fff !important;
+}
+/* 
+h3 {
+    color: #fff !important;
+} */
+
+/* footer bar coloring */
+#fbar {
+    background-color: rgb(45, 45 ,46) !important;
+}
+
+/* option to change input box color */
+/* .RNNXgb {
+    background: rgb(50, 54, 57) !important;
+    border-color: #fff !important;
+} */
+
+/* Letters for the "Search" and "Feeling Lucky" buttons */
+.tfB0Bf input[type="submit"], .gbqfba {
+    color: black !important;
+}
+
+.a,cite, cite a:link, cite a:visited, .cite:link,
+#nygTcd>i, .bc a:link {
+    color: black !important;
+}
+
+/*post search header portion*/
+.minidiv .sfbg {
+    background-color: rgb(45, 45, 46) !important;
+}
+
+/* End of Google CSS  */
+
+.topTabs {
+    background-color: black !important;
+}
+
+#moduleTitle, .portlet h2 {
+    background-color: rgb(45, 45, 46) !important;
+    color: #fff !important;
+}
+.collapsible {
+    background-color: rgb(45, 45, 46) !important;
+}
+
+#contentArea, .containerOptions, .containerPortal {
+    background-color: black !important;
+}
+
+.actionBar {
+    background-color: rgb(45, 45, 46) !important;
+}
+
+.actionBar ul li a {
+    background-color: #771919 !important;
+    /* border: 5px #fff !important; */
+}
+
+.actionBar ul li.secondaryButton.acces-reorder {
+    background-color: black !important;
+}
+
+.container {
+    background-color: #212121 !important;
+}
+
+.contentBox {
+    background-color: rgb(45, 45, 46) !important;
+}
+
+
+/* *://*/*", "<all_urls> */
