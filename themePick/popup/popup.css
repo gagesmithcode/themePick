@@ -45,9 +45,9 @@ img {
     width: 100%;
 }
 
-.logo {
+/* .logo {
     padding: 8px;
-}
+} */
 
 .logo-icon {
     vertical-align: text-bottom;
@@ -81,4 +81,8 @@ img {
     font-size: 40px;
     color: #FFFFFF;
     display: inline-block;
+}
+
+.navbar {
+  width: 348px;
 }

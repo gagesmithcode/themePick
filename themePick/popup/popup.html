@@ -30,8 +30,7 @@
   </head>
   <body>
     <div class="modal-header">
-      <h1 class="logo">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav-bar">
           <!-- this src portion was given by referencing the location the extension is refering the image to. 
           In console of extension run chrome.runtime.getURL("path"); -->
           <img
@@ -39,6 +38,7 @@
             class="logo-icon"
           />
           <a href="../index.html" target="_blank" class="navbar-brand">ThemePick</a>
+          <!-- toggle button -->
           <button
             class="navbar-toggler"
             data-toggle="collapse"
@@ -46,6 +46,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- /toggle button -->
+          <!-- dropdown menu -->
           <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -56,20 +58,20 @@
               </li>
             </ul>
           </div>
+          <!-- /dropdown menu -->
         </nav>
-      </h1>
     </div>
-    <div class="modal-content">
+    <!-- <div class="modal-content"> -->
       <!--TODO: Create modal content with sliders and color wheels-->
-    </div>
+    <!-- </div> -->
     <div class="modal-icons">
-      <div class="flex-container">
+      <!-- <div class="flex-container">
         <div class="flex">
           <a href="https://github.com/gagesmithcode" target="_blank">
             <i class="fa fa-github"></i>
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="modal-icons">
       <div class="flex-container">
