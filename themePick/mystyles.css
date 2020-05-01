@@ -1,81 +1,298 @@
 body {
-    background-color: rgb(45, 45, 46) !important;
-    color:#fff !important;
+  background-color: rgb(45, 45, 46) !important;
 }
 
 /* text on the webpage */
 #hptl a {
-    color: #fff !important;
+  color: #fff !important;
 }
-/* 
-h3 {
-    color: #fff !important;
-} */
-
 /* footer bar coloring */
 #fbar {
-    background-color: rgb(45, 45 ,46) !important;
+  background-color: rgb(45, 45, 46) !important;
 }
-
-/* option to change input box color */
-/* .RNNXgb {
-    background: rgb(50, 54, 57) !important;
-    border-color: #fff !important;
-} */
 
 /* Letters for the "Search" and "Feeling Lucky" buttons */
-.tfB0Bf input[type="submit"], .gbqfba {
-    color: black !important;
+.tfB0Bf input[type="submit"],
+.gbqfba {
+  color: black !important;
 }
 
-.a,cite, cite a:link, cite a:visited, .cite:link,
-#nygTcd>i, .bc a:link {
-    color: black !important;
+.a,
+cite,
+cite a:link,
+cite a:visited,
+.cite:link,
+#nygTcd > i,
+.bc a:link {
+  color: black !important;
 }
 
 /*post search header portion*/
 .minidiv .sfbg {
-    background-color: rgb(45, 45, 46) !important;
+  background-color: rgb(45, 45, 46) !important;
 }
 
 /* End of Google CSS  */
 
 .topTabs {
-    background-color: black !important;
+  background-color: black !important;
 }
 
-#moduleTitle, .portlet h2 {
-    background-color: rgb(45, 45, 46) !important;
-    color: #fff !important;
-}
+/* #moduleTitle,
+.portlet h2 {
+  background-color: rgb(45, 45, 46) !important;
+  color: #fff !important;
+} */
 .collapsible {
-    background-color: rgb(45, 45, 46) !important;
+  background-color: rgb(45, 45, 46) !important;
 }
 
-#contentArea, .containerOptions, .containerPortal {
-    background-color: black !important;
+#contentArea,
+.containerOptions,
+.containerPortal {
+  background-color: black !important;
 }
 
-.actionBar {
-    background-color: rgb(45, 45, 46) !important;
+.actionBar.editmode.clearfix {
+  color: #212121 !important;
+  background-color: rgb(45, 45, 46) !important;
+  border: none !important;
 }
 
 .actionBar ul li a {
-    background-color: #771919 !important;
-    /* border: 5px #fff !important; */
+  background-color: #771919 !important;
+  border-bottom: 5px solid black !important;
+  border-top: 5px solid rgb(45, 45, 46) !important;
+  margin-left: 0px !important;
 }
 
 .actionBar ul li.secondaryButton.acces-reorder {
-    background-color: black !important;
+  background-color: black !important;
 }
 
 .container {
-    background-color: #212121 !important;
+  background-color: #212121 !important;
 }
 
 .contentBox {
-    background-color: rgb(45, 45, 46) !important;
+  background-color: black !important;
+  /* background-color: rgb(45, 45, 46) !important; */
 }
 
+/* What's New Module Buttons */
+.actionMenuButton {
+  color: black !important;
+}
 
-/* *://*/*", "<all_urls> */
+/* Module Link Text Colors */
+a,
+.portlet .subCategories li a {
+  color: #fff !important;
+}
+
+/*Header Text Fields*/
+.headerText {
+  color: #fff !important;
+}
+
+.blockGroups .itemHeadOpen {
+  background: url(images/portlet_contract_alt.gif) no-repeat 1px 9px
+    rgb(45, 45, 46) !important;
+}
+
+/*Active Tab Coloring*/
+.appTabs td.active {
+  border-bottom: 3px solid white !important;
+}
+
+.portlet ul li ul li span.newItemCount {
+  border: 1px solid white !important;
+}
+
+.container {
+  border: 1px solid #212121 !important;
+}
+
+table.bouncer {
+  border-bottom: none !important;
+}
+
+/*Class change header*/
+.breadcrumbs,
+.panelTabs {
+  border-bottom: 1px solid #212121 !important;
+  background: rgb(45, 45, 46) !important;
+}
+
+#pageTitleDiv,
+.pageTitle {
+  background-color: #212121 !important;
+  border: 1px black solid !important;
+}
+#pageTitleDiv,
+#pageTitleText span {
+  color: white !important;
+}
+
+.contentPane {
+  background: black !important;
+}
+.shadow {
+  border-top: 6px solid black !important;
+}
+
+.contentList > li,
+.buildList > li,
+.contentListPlain > li,
+.announcementList > li,
+.contentPageItem {
+  border: 1.25px solid transparent !important;
+  border-top-color: #771919 !important;
+  border-bottom-color: #771919 !important;
+}
+
+#content_listContainer * {
+  color: white !important;
+  background-color: #212121 !important;
+}
+
+#courseMenuPalette_contents * {
+  background-color: black !important;
+  color: white !important;
+}
+
+#courseMenuPalette * {
+  background-color: black !important;
+  color: white !important;
+}
+
+#myGroups * {
+  background-color: black !important;
+  color: white !important;
+}
+
+#menuWrap {
+  background-color: rgb(45, 45, 46) !important;
+}
+
+div.cmdiv {
+  background-color: black !important;
+  color: white !important;
+}
+
+div.cmdiv > ul > li.contextmenubar_top > a.close-menu {
+  background-color: black !important;
+}
+
+#moduleList * {
+  background-color: #212121 !important;
+}
+
+ul.contentListPlain > li > * {
+  background-color: black !important;
+  color: white !important;
+}
+
+ul.paletteItems > * {
+  background-color: #212121 !important;
+  color: white !important;
+}
+
+#flyoutMenuContent * {
+  background-color: black !important;
+  color: white !important;
+}
+
+#bottomButtons * {
+  background-color: #212121 !important;
+  border: 1px solid transparent !important;
+  border-right-color: black !important;
+}
+
+#outer_left_stream_mygrades * {
+  background-color: rgb(45, 45, 46) !important;
+}
+
+#grades_wrapper * {
+  background-color: rgb(45, 45, 46) !important;
+}
+
+.gradeTableNew .row.expanded {
+  box-shadow: none !important;
+  border: 1px solid white !important;
+  margin-top: auto !important;
+}
+
+#column_0 * {
+  background-color: rgb(45, 45, 46) !important;
+}
+
+#anonymous_element_2 * {
+  background-color: rgb(45, 45, 46) !important;
+}
+
+#contentPanel * {
+  background-color: rgb(45, 45, 46) !important;
+  color: white !important;
+}
+
+div.eval-links.horizontal * {
+  color: white !important;
+}
+
+#streamDetailBodyRight * {
+  background-color: black !important;
+  color: white !important;
+}
+
+#stream_mygrades {
+  border: 1px solid white !important;
+}
+
+.active_stream_item {
+  box-shadow: none !important;
+}
+
+#MyGradesTool * {
+  background-color: black !important;
+  color: white !important;
+}
+
+#outer_left_stream_mygrades_d {
+  border: 1px solid white !important;
+}
+
+#MyStreamTool * {
+  background-color: black !important;
+  color: white !important;
+}
+
+div.stream_pages {
+  border: 1px solid white !important;
+}
+
+.due_date .stream_item {
+  border: none !important;
+}
+
+#left_stream_alerts * {
+  background-color: black !important;
+  color: white !important;
+}
+
+#left_stream_alerts > div {
+  border: 1px solid white !important;
+}
+
+div.fc-event-inner.fc-event-skin {
+  border-color: #771919 !important;
+}
+
+table.ui-datepicker-calendar > tbody {
+  background-color: black !important;
+}
+
+#contentPanel #copyright > * {
+  background-color: black !important;
+  color: white !important;
+}

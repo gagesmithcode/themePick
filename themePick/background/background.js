@@ -7,8 +7,8 @@
  */
 
 chrome.runtime.onInstalled.addListener(function () {
-  chrome.storage.sync.set({ color: "#212121" }, function () {
-  });
+  // chrome.storage.sync.set({ color: "#212121" }, function () {
+  // });
 
   //This portion will create the functionallity difference where the user can actually interact with popup.html
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
