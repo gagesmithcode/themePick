@@ -24,3 +24,24 @@ chrome.runtime.onInstalled.addListener(function () {
     ]);
   });
 });
+
+
+//Add a listener for a function
+chrome.tabs.onCreated.addListener(changeColor);
+
+chrome.tabs.onUpdated.addListener(function(tabId, info, tab) {
+  if (info.status == 'complete') changeColor(tab);
+});
+
+
+//Take the incoming tab id and check if it is a Blackboard page
+//If blackboard then layer the css over it
+function changeColor(tab) {
+  var tabUrl = tab.url;
+  if (tabUrl && tabUrl.indexOf("learn.csuchico.edu") != -1) {
+    chrome.tabs.insertCSS(tab.id, {file: "styles/blackboard.css"});
+  }
+  // if (tabUrl && tabUrl.indexOf("google.com") != -1) {
+  //   chrome.tabs.insertCSS(tab.id, {file: "mystyles.css"});
+  // }
+}

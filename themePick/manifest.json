@@ -2,13 +2,13 @@
   "name": "ThemePick",
   "version": "1.0",
   "manifest_version": 2,
-  "permissions": ["activeTab", "declarativeContent", "storage"],
-  "options_page": "options/options.html",
+  "permissions": ["activeTab", "declarativeContent", "storage", "tabs", "https://*/"],
   "content_scripts": [
     {
-      "matches": ["*://learn.csuchico.edu/*"],
+      "matches": ["*://learn.csuchico.edu/*", "*://www.google.com/*"],
       "all_frames": true,
-      "js": ["content-scripts/content.js"]
+      "js": ["content-scripts/content.js"],
+      "run_at": "document_start"
     }
   ],
   "background": {
@@ -16,7 +16,7 @@
     "persistent": true
   },
   "web_accessible_resources": [
-    "mystyles.css"
+    "styles/blackboard.css"
   ],
   "browser_action": {
     "default_popup": "popup/popup.html",
