@@ -1,23 +1,23 @@
-body {
+/* body {
   background-color: rgb(45, 45, 46) !important;
-}
+} */
 
 /* text on the webpage */
-#hptl a {
+/* #hptl a {
   color: #fff !important;
-}
+} */
 /* footer bar coloring */
-#fbar {
+/* #fbar {
   background-color: rgb(45, 45, 46) !important;
-}
+} */
 
 /* Letters for the "Search" and "Feeling Lucky" buttons */
-.tfB0Bf input[type="submit"],
+/* .tfB0Bf input[type="submit"],
 .gbqfba {
   color: black !important;
-}
+} */
 
-.a,
+/* .a,
 cite,
 cite a:link,
 cite a:visited,
@@ -25,12 +25,12 @@ cite a:visited,
 #nygTcd > i,
 .bc a:link {
   color: black !important;
-}
+} */
 
 /*post search header portion*/
-.minidiv .sfbg {
+/* .minidiv .sfbg {
   background-color: rgb(45, 45, 46) !important;
-}
+} */
 
 /* End of Google CSS  */
 

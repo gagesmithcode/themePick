@@ -7,7 +7,7 @@
     {
       "matches": ["*://learn.csuchico.edu/*", "*://www.google.com/*"],
       "all_frames": true,
-      "js": ["content-scripts/content.js"],
+      "js": ["content-scripts/content.js", "web/js/checkbox.js"],
       "run_at": "document_start"
     }
   ],
@@ -16,7 +16,7 @@
     "persistent": true
   },
   "web_accessible_resources": [
-    "styles/blackboard.css"
+    "sites.html"
   ],
   "browser_action": {
     "default_popup": "popup/popup.html",

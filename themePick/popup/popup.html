@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <div class="modal-header">
+    <div class="modal-body">
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav-bar">
         <!-- this src portion was given by referencing the location the extension is refering the image to. 
           In console of extension run chrome.runtime.getURL("path"); -->
@@ -60,17 +60,14 @@
                 >Settings</a
               >
             </li>
+            <li class="nav-item">
+              <a href="https://github.com/gagesmithcode/themepick" target="_blank" class="nav-link"
+                ><i class="fa fa-github"></i> Source</a
+              >
+            </li>
           </ul>
         </div>
         <!-- /dropdown menu -->
-        <div class="modal-icons">
-          <div class="flex-container">
-            <div class="flex">
-              <button id="changeColor">Color Click</button>
-              <script src="popup.js"></script>
-            </div>
-          </div>
-        </div>
       </nav>
     </div>
 
