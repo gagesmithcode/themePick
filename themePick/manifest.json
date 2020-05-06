@@ -2,10 +2,10 @@
   "name": "ThemePick",
   "version": "1.0",
   "manifest_version": 2,
-  "permissions": ["activeTab", "declarativeContent", "storage", "tabs", "https://*/"],
+  "permissions": ["activeTab", "declarativeContent", "storage", "webNavigation", "tabs", "https://*/"],
   "content_scripts": [
     {
-      "matches": ["*://learn.csuchico.edu/*", "*://www.google.com/*"],
+      "matches": ["*://learn.csuchico.edu/*", "*://shibboleth.csuchico.edu/*"],
       "all_frames": true,
       "js": ["content-scripts/content.js", "web/js/checkbox.js"],
       "run_at": "document_start"
