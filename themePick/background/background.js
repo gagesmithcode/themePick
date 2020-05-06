@@ -5,6 +5,10 @@
  * Description   :
  *
  */
+
+var tabUrl;
+var tabId;
+
 var colorFlag = true;
 chrome.runtime.onConnect.addListener(function (port) {
   console.assert(port.name == "porty");
@@ -16,20 +20,36 @@ chrome.runtime.onConnect.addListener(function (port) {
 //Add a listener for a function
 chrome.tabs.onCreated.addListener(changeColor);
 
-chrome.tabs.onUpdated.addListener(function (tabId, info, tab) {
-  if (info.status == "complete" && colorFlag == true) {
-    changeColor(tab);
-  }
+//Enabling web navigation to have the changeColor function fire before loading of the webpage
+chrome.webNavigation.onBeforeNavigate.addListener(function ({ tabId: tabId }) {
+  chrome.tabs.query(
+    { active: true, windowId: chrome.windows.WINDOW_ID_CURRENT },
+    function (curTab) {
+      if (curTab[0].url && curTab[0].url.indexOf("csuchico.edu") != -1) {
+        tabUrl = curTab[0].url;
+        tabId = curTab[0].id;
+      }
+    }
+  );
+  changeColor();
 });
 
+chrome.webNavigation.onCommitted.addListener(function () {
+  changeColor();
+});
 //Take the incoming tab id and check if it is a Blackboard page
 //If blackboard then layer the css over it
-function changeColor(tab) {
-  var tabUrl = tab.url;
+function changeColor() {
+  // var tabUrl = tab.url;
   if (colorFlag) {
-    if (tabUrl && tabUrl.indexOf("learn.csuchico.edu") != -1) {
-      chrome.tabs.insertCSS(tab.id, { file: "styles/blackboard.css" });
+    // if (tabUrl && tabUrl.indexOf("learn.csuchico.edu") != -1) {
+    if (tabUrl && tabUrl.indexOf("csuchico.edu") != -1) {
+      // window.alert("BEFORE");
+      chrome.tabs.insertCSS(tabId, {
+        file: "styles/blackboard.css",
+        allFrames: true,
+        runAt: "document_start",
+      });
     }
   }
 }
-
