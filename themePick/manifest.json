@@ -1,6 +1,6 @@
 {
   "name": "ThemePick",
-  "version": "1.0",
+  "version": "0.0.1",
   "manifest_version": 2,
   "permissions": ["activeTab", "declarativeContent", "storage", "webNavigation", "tabs", "https://*/"],
   "content_scripts": [
