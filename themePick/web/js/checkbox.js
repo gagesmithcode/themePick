@@ -12,22 +12,23 @@ function init() {
   var app = new App();
   var state = app.getState();
   //TODO: create a checkbox specifically for other sites 
-  var checkbox = document.querySelector("#blackboard");
+  var blackboard = document.querySelector("#blackboard");
+  var google = document.querySelector("#google");
 
   if (state == "true") {
-    checkbox.checked = true;
+    blackboard.checked = true;
   }
   var ref = window.location.href;
   //Making sure that the checkbox event listener only fires on sites.html
   if (ref && ref.indexOf("sites.html") != -1) {
-    checkbox.addEventListener("click", function () {
-      app.setState(checkbox.checked);
+    blackboard.addEventListener("click", function () {
+      app.setState(blackboard.checked);
       chrome.tabs.reload();
     });
     //Set up the port to communicate with background.js
     var port = chrome.runtime.connect({ name: "porty" });
-    if (checkbox.checked == true) port.postMessage({ state: "enabled" });
-    else if (checkbox.checked == false) port.postMessage({ state: "disabled" });
+    if (blackboard.checked == true) port.postMessage({ state: "enabled" });
+    else if (blackboard.checked == false) port.postMessage({ state: "disabled" });
   }
 }
 
